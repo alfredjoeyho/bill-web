@@ -2,7 +2,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { SearchEngineComponent } from './search-engine/search-engine.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { billHomeComponent } from './bill-home/bill-home.component';
 
@@ -14,15 +13,15 @@ import {
 } from '@angular/material';
 import { AboutComponent } from './about/about.component';
 import { StoreModule } from '@ngrx/store';
-import { BillServiceService } from '../../data-access/bill-service.service';
-import { ProfileFacade } from 'libs/ui/data-access/src';
 import {
   PROFILE_FEATURE_KEY,
   profileReducer
-} from 'libs/ui/data-access/src/lib/+state/profile.reducer';
+} from 'libs/profile-page/data-access/src/lib/+state/profile.reducer';
 import { EffectsModule } from '@ngrx/effects';
-import { ProfileEffects } from 'libs/ui/data-access/src/lib/+state/profile.effects';
 import { ProfileListComponent } from './profile-list/profile-list.component';
+import { ProfileFacade } from 'libs/profile-page/data-access/src';
+import { BillServiceService } from 'libs/profile-page/data-access/bill-service.service';
+import { ProfileEffects } from 'libs/profile-page/data-access/src/lib/+state/profile.effects';
 @NgModule({
   imports: [
     CommonModule,

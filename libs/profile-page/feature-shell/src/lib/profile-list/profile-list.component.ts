@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProfileFacade } from 'libs/ui/data-access/src';
+import { ProfileFacade } from 'libs/profile-page/data-access/src/lib/+state/profile.facade';
 
 @Component({
   selector: 'bill-profile-list',

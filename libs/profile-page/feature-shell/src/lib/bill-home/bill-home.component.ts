@@ -1,4 +1,5 @@
-import { ProfileState } from './../../../data-access/src/lib/+state/profile.reducer';
+import { ProfileFacade } from './../../../../data-access/src/lib/+state/profile.facade';
+
 import { UserProfiles } from 'libs/shared/src/lib/modals/userProfile';
 import {
   Component,
@@ -7,12 +8,13 @@ import {
   ChangeDetectionStrategy
 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { BillServiceService } from '../../../data-access/bill-service.service';
+
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable, Subscription } from 'rxjs';
 import { Store, select } from '@ngrx/store';
-import { ProfileFacade } from '../../../data-access/src/lib/+state/profile.facade';
 import { map } from 'rxjs/operators';
+import { BillServiceService } from 'libs/profile-page/data-access/bill-service.service';
+import { ProfileState } from 'libs/profile-page/data-access/src/lib/+state/profile.reducer';
 
 @Component({
   selector: 'bill-bill-home',

@@ -1,4 +1,4 @@
-import { uiModule } from './../../../../libs/ui/src/lib/ui.module';
+import { uiModule } from '../../../../libs/profile-page/feature-shell/src/lib/profile-page.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,10 +12,10 @@ import { FooterComponent } from './footer/footer.component';
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { ProfileEffects } from 'libs/ui/data-access/src/lib/+state/profile.effects';
+import { ProfileEffects } from 'libs/profile-page/data-access/src/lib/+state/profile.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environment
-import { profileReducer } from 'libs/ui/data-access/src/lib/+state/profile.reducer';
+import { profileReducer } from 'libs/profile-page/data-access/src/lib/+state/profile.reducer';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent],

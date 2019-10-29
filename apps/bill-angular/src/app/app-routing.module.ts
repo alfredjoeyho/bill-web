@@ -1,4 +1,4 @@
-import { billHomeComponent } from 'libs/ui/src/lib/bill-home/bill-home.component';
+import { billHomeComponent } from 'libs/profile-page/feature-shell/src/lib/bill-home/bill-home.component';
 import { NgModule } from '@angular/core';
 import {
   Routes,
@@ -7,7 +7,7 @@ import {
   RouterStateSnapshot
 } from '@angular/router';
 import { MatToolbarModule } from '@angular/material';
-import { AboutComponent } from 'libs/ui/src/lib/about/about.component';
+import { AboutComponent } from 'libs/profile-page/feature-shell/src/lib/about/about.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'home', component: billHomeComponent },
