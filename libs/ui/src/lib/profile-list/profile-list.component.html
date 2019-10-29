@@ -1,0 +1,11 @@
+<mat-list>
+  <h3 mat-subheader>User Profile</h3>
+  <mat-list-item class="user-profile" *ngFor="let user of dataSource$  | async">
+    <h4 mat-line>{{user.firstName}} {{user.lastName}}</h4>
+    <h4 mat-line>Email: {{user.email}}</h4>
+    <h4 mat-line>Display Name: {{user.displayName}} </h4>
+    <h4 mat-line>Description: {{user.description}} </h4>
+    <h4 mat-line>Department: {{user.department}} </h4>
+    <h4 mat-line>Team: {{user.team}} </h4>
+  </mat-list-item>
+</mat-list>

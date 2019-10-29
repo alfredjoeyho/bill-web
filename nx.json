@@ -1,0 +1,45 @@
+{
+  "npmScope": "bill",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "search-e2e": {
+      "tags": []
+    },
+    "search": {
+      "tags": []
+    },
+    "data": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
+    },
+    "bill": {
+      "tags": []
+    },
+    "search-ui": {
+      "tags": []
+    },
+    "bill-home": {
+      "tags": []
+    },
+    "libname": {
+      "tags": []
+    },
+    "bill-app-e2e": {
+      "tags": []
+    },
+    "bill-app": {
+      "tags": []
+    }
+  }
+}

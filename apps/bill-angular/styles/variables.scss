@@ -1,0 +1,14 @@
+$primary: #ffffff;
+$secondary: black; //#FFFEF0;
+$Third: #ccae84;
+
+$oldSecondary: #0b3c5d;
+$gold: #d9b310;
+$light-grey: #efefef;
+$grey: darken($light-grey, 30%);
+$black: #1d2731;
+$navbar-height: 80px;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

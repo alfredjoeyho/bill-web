@@ -1,0 +1,47 @@
+<div class="view">
+  <div class="container">
+    <div fxLayout="row" fxLayout.="column" fxLayout.sm="column" fxFlex class="contentResp">
+      <div class="form-wrapper text-center blocks" fxFlex>
+
+        <h1 class="p-3 mb-2 bg-secondary text-white w-50 align-content-center flex">User profile</h1>
+        <h5 class="text-center mb-2 mt-5">Fill your information</h5>
+        <form id="searchForm" [formGroup]="searchForm" (ngSubmit)="submitHandler()">
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="email" placeholder="Enter Your Email"
+              formControlName="email">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="firstname" placeholder="Enter Your Fist Name"
+              formControlName="firstname">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="lastname" placeholder="Enter your Last Name"
+              formControlName="lastname">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="displayname" placeholder="Enter your Display Name"
+              formControlName="displayname">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="description"
+              placeholder="Enter your description of Meal preference text-width" formControlName="description">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="department" placeholder="Enter your department"
+              formControlName="department">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control text-width" id="team" placeholder="Enter your team"
+              formControlName="team">
+          </div>
+
+          <button mat-button class="btn" type="submit" [disabled]="searchForm.invalid">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <bill-profile-list></bill-profile-list>
+</div>

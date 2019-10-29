@@ -1,0 +1,29 @@
+<div class="navbar bg-primary">
+  <span class="navbar-brand brand">bill.com</span>
+  <div [ngClass]="getMenuBottnClass()" (click)="toggleMenu()">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+  </div>
+</div>
+
+<nav [ngClass]="getMenuClass()">
+  <ul [ngClass]="getMenuNavClass()">
+
+    <li ngClss="getNavItemClass()">
+      <a routerLink="/home" routerLinkActive="active" class="nav-link nevMenuTxt">
+        Home
+      </a>
+    </li>
+    <li ngClss="getNavItemClass()">
+      <a routerLink="/aboutus" routerLinkActive="active" class="nav-link nevMenuTxt">
+        About Us
+      </a>
+    </li>
+    <li ngClss="getNavItemClass()">
+      <a routerLink="/moreabout" routerLinkActive="active" class="nav-link nevMenuTxt">
+        Go to Google
+      </a>
+    </li>
+  </ul>
+</nav>
