@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { of, Observable } from 'rxjs';
 import { catchError, map, mergeMap, tap, switchMap } from 'rxjs/operators';
-import { BillServiceService } from '../../../../../ui/src/lib/bill-service.service';
+import { BillServiceService } from '../../../bill-service.service';
 import {
   loadProfiles,
   loadProfilesSuccess,
@@ -32,7 +32,7 @@ export class ProfileEffects {
   createProfileSingle$ = createEffect(() =>
     this.actions$.pipe(
       ofType(createProfileSingle.type),
-      switchMap(form => {
+      mergeMap(form => {
         return this.billServiceService.save(form).pipe(
           map(_ => {
             return loadProfiles();

@@ -8,7 +8,7 @@ import {
   profileReducer,
   PROFILE_FEATURE_KEY
 } from '../../../data-access/src/lib/+state/profile.reducer';
-import { BillServiceService } from '../../../../ui/src/lib/bill-service.service';
+import { BillServiceService } from '../../bill-service.service';
 
 @NgModule({
   imports: [

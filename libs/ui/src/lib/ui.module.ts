@@ -14,7 +14,7 @@ import {
 } from '@angular/material';
 import { AboutComponent } from './about/about.component';
 import { StoreModule } from '@ngrx/store';
-import { BillServiceService } from './bill-service.service';
+import { BillServiceService } from '../../data-access/bill-service.service';
 import { ProfileFacade } from 'libs/ui/data-access/src';
 import {
   PROFILE_FEATURE_KEY,
